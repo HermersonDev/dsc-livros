@@ -26,3 +26,5 @@ Route::get('/', function () {
 Route::get('/novo', function() {
     return view('livro.novo');
 });
+
+Route::post('/livro/salvar', 'LivroController@salvar');

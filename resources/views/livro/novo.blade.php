@@ -3,7 +3,7 @@
 @section('titulo', 'Novo Livro')
 
 @section('corpo')
-<form method="POST" action="">
+<form method="POST" action="{{ action('LivroController@salvar') }}">
 	{{ csrf_field() }}
     <div class="form-group">
         <label for="titulo">Título</label>
